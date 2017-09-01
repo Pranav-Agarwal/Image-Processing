@@ -12,7 +12,7 @@ lines = [[] for i in range(100)]
 cur = 0
 
 def runRdp(arr):
-    arr = map(rdp,arr)
+    arr = [rdp(p,epsilon=10) for p in arr]
     return arr
 
 def showFinal(arr):
